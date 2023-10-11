@@ -42,7 +42,7 @@ formulario.addEventListener('submit', (event) => {
 
         if (loginEncontrado.senha == senha) {
             localStorage.setItem("logado", JSON.stringify(loginEncontrado))
-            window.location.href = '/home.html'
+            window.location.href = 'home.html'
         }
         else {
             let toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
