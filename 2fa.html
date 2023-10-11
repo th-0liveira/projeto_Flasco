@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src='./script/redireciona-login.js'></script>
+    <title>Autenticação de Dois Fatores</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-danger" href="home.html">Flasco</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="home.html">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-primary" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Produtos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-primary" href="/campanha.html">Gerenciador de campanhas</a>
+                            </li>
+                            <li><a class="dropdown-item text-primary" href="/2fa.html">Autenticação de Dois Fatores</a>
+                            </li>
+                            <li><a class="dropdown-item text-primary" href="/numero-mascara.html">Número máscara</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex flex-column flex-lg-row ">
+                    <div class="ms-lg-auto nav-link text-primary fw-bold me-2" id="login-usuario"></div>
+                    <button class="ms-lg-auto nav-link text-primary btn btn-link align-self-start"
+                        id="botao-logout">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="col-11 mx-auto">
+        <div class="d-flex mt-3 mt-sm-5 flex-column align-items-center flex-xl-row justify-content-center">
+            <img class="img-fluid mx-xl-3 col-5" src="/imagens//2fa/shutterstock_641960737.jpg"
+                alt="Desenho de um notebook e um smartphone representando a autenticação em dois fatores." />
+            <div class="fs-5 my-auto align-self-center col-12 col-xl-6">
+                <h1 class="fw-bold fs-2">2FA - AUTENTICAÇÃO DE DOIS FATORES</h1>
+                <p class="">Fortaleça a estratégia de segurança de seu negócio.</p>
+                <div class="d-flex flex-column align-items-center align-items-xl-start">
+                    <button class="btn w-50 btn-primary">CADASTRE-SE E TESTE GRATUITAMENTE</button>
+                    <button class="btn w-50 mt-2 btn-success">FALE COM UM ESPECIALISTA</button>
+                </div>
+            </div>
+        </div>
+        <h2 class="mt-5 fw-bold">Benefícios do 2FA</h2>
+        <div class="fs-4 d-flex flex-column align-items-center flex-xl-row">
+            <img class="img-fluid mx-xl-3 col-5" src="/imagens//2fa/2fa-steps.png"
+                alt="Desenho de um notebook e um smartphone representando a autenticação em dois fatores." />
+            <ul class="align-self-center">
+                <li>Ofereça segurança aprimorada para seus clientes</li>
+                <li class="text-primary">Reduza casos de fraude e invasões e evite o acesso a dados por invasores.</li>
+                <li>Envio de OTP por meio de vários canais, incluindo SMS e voz.</li>
+                <li class="text-primary">Flexibilidade de canais garante que o usuário conseguirá completar a tarefa
+                    desejada.</li>
+                <li>API simples e de rápida implementação.</li>
+                <li class="text-primary">Plataforma intuitiva que permite visualizar relatórios de uso por dia, mês ou
+                    ano.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script/logout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
