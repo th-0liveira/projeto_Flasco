@@ -92,8 +92,10 @@ function adicionarUsuario(usuario) {
         frase = 'Usuário criado com sucesso. Redirecionando...';
         localStorage.setItem(usuario.login, JSON.stringify(usuario));
         setTimeout(function () {
-            window.location.href = '/index.html';
+            window.location.href = 'index.html';
         }, 2000);
+
+        
 
     } else {
         frase = 'Login já existe. Não foi possível adicionar o usuário.';
