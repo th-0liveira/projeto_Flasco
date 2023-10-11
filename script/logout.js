@@ -11,5 +11,5 @@ var botaoDeslogar = document.getElementById('botao-logout');
 botaoDeslogar.addEventListener('click', () => {
     console.log('te3');
     localStorage.removeItem('logado');
-    window.location.href = '/index.html'
+    window.location.href = 'index.html'
 })
